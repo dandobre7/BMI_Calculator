@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezultat BMI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-image: url('https://wallpaperbat.com/img/389282-what-makes-a-diet-heart-healthy-sheknows.jpg');
+            background-size: cover;
+            color: rgb(17, 1, 1);
+        }
+
+        .container {
+            max-width: 400px;
+            width: 100%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .bmi-result {
+            font-weight: bold;
+        }
+
+        .interpretare-result {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Rezultat BMI</h1>
+        <p><span class="dot">&#8226;</span> Indicele tău de masă corporală este: <span class="bmi-result">{{ bmi }}</span></p>
+        <p><span class="dot">&#8226;</span>Te încadrezi în categoria: <span class="interpretare-result">{{ interpretare }}</span></p>
+        <p><span class="dot">&#8226;</span>Sfaturi de urmat: {{ sfaturi }}</p>
+    </div>
+</body>
+</html>
